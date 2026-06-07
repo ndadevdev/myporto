@@ -239,7 +239,7 @@ if (typeof VanillaTilt !== "undefined") {
 // GITHUB PROJECTS (SAFE + CLEAN)
 // =====================================
 
-fetch("https://api.github.com/users/ndadev/repos")
+fetch("https://api.github.com/users/ndadevdev/repos")
     .then(res => res.json())
     .then(data => {
         const container = document.getElementById("githubProjects");
