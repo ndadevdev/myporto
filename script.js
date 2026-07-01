@@ -138,6 +138,7 @@ window.addEventListener("scroll", () => {
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
+const sectionNavLinks = document.querySelectorAll("#sectionNav a");
 
 window.addEventListener("scroll", () => {
   let current = "";
@@ -153,12 +154,18 @@ window.addEventListener("scroll", () => {
       link.getAttribute("href") === `#${current}`
     );
   });
+
+  sectionNavLinks.forEach(link => {
+    link.classList.toggle("active", link.dataset.target === current);
+  });
 });
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
   });
 }, {
@@ -237,3 +244,31 @@ form.addEventListener("submit", function (e) {
     console.log(err);
   });
 });
+
+const statNumbers = document.querySelectorAll(".stat-number");
+
+function animateStat(el) {
+  const target = parseInt(el.dataset.target);
+  let current = 0;
+  const step = Math.max(1, Math.ceil(target / 30));
+  const interval = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(interval);
+    }
+    el.textContent = current;
+  }, 30);
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      statNumbers.forEach(animateStat);
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+const statsSection = document.querySelector(".stats");
+if (statsSection) statsObserver.observe(statsSection);

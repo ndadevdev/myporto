@@ -27,6 +27,9 @@ VoiceBox editorial system (`voicebox-DESIGN.md`). Zero `border-radius`, zero `bo
 - **GitHub projects** (`script.js:195`): fetches 6 most recently updated repos from `api.github.com/users/ndadevdev/repos`. Unauthenticated — 60 req/hr limit. Vanilla Tilt re-initialized after cards render at `script.js:217`.
 - **Contact form** (`script.js:223-238`): EmailJS — `publicKey: "IRRkXUn7gTZiY00u0"`, service `service_ufdpiuj`, template `template_9tsw574`. No backend. Keys are client-side by design (free tier).
 - **LinkedIn link** (`index.html:181`): placeholder (`href="#"`).
-- **Animations**: GSAP loader timeline, IntersectionObserver scroll reveal, mousemove parallax on hero image.
+- **Animations**: GSAP loader timeline, IntersectionObserver scroll reveal (spring-bounce on desktop), mousemove parallax on hero image.
+- **Noise texture**: fixed `::after` overlay on `body` (`z-index: 99998`) — SVG fractal noise at 3.5% opacity for editorial grain.
+- **Section nav** (`#sectionNav`): fixed dot indicators on the right side (desktop only, hidden ≤900px). Active dot tracks scroll via `data-target`.
+- **Stats counter** (`script.js:248-268`): numbers animate from 0 when `.stats` section enters viewport. Triggered once via `IntersectionObserver` with `threshold: 0.5`.
 - **Theme toggle removed**: Dark mode was intentionally removed in commit `d723dad`. CSS for `#themeBtn` at `style.css:149-174` is dead code; no toggle is wired in HTML or JS.
 - **No `package.json`**, no test/lint/typecheck commands exist. No `.gitignore`.
