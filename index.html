@@ -1,520 +1,211 @@
 <!DOCTYPE html>
-
 <html lang="id">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haidar Nanda Supriyadi Aziz | Portfolio</title>
+  <meta name="description" content="Portfolio Haidar Nanda Supriyadi Aziz - Informatics Student, Data Science Enthusiast, Web Developer">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Haidar Nanda Supriyadi Aziz | Portfolio</title>
-
-<meta name="description"
-    content="Portfolio Haidar Nanda Supriyadi Aziz - Informatics Student, Data Science Enthusiast, Web Developer">
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+  <div id="progressBar"></div>
 
-<!-- PROGRESS BAR -->
-
-<div id="progressBar"></div>
-
-<!-- LOADER -->
-
-<div id="loader">
-
+  <div id="loader">
     <h1>HAIDAR.</h1>
+  </div>
 
-</div>
-
-<!-- BACKGROUND -->
-
-<div class="grid-bg"></div>
-
-<div class="aurora aurora1"></div>
-
-<div class="aurora aurora2"></div>
-
-<!-- HEADER -->
-
-<header>
-
+  <header>
     <nav class="navbar">
-
-        <div class="logo">
-            HAIDAR.
-        </div>
-
-        <ul class="nav-links">
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#education">Education</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <div class="nav-actions">
-
-            <button id="themeBtn">
-
-                <i class="fa-solid fa-moon"></i>
-
-            </button>
-
-            <button id="menuBtn">
-
-                <i class="fa-solid fa-bars"></i>
-
-            </button>
-
-        </div>
-
+      <a href="#" class="logo">HAIDAR.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
     </nav>
+  </header>
 
-</header>
-
-<!-- MOBILE MENU -->
-
-<div id="mobileMenu">
-
+  <div id="mobileMenu">
     <a href="#about">About</a>
-
     <a href="#education">Education</a>
-
     <a href="#skills">Skills</a>
-
     <a href="#projects">Projects</a>
-
     <a href="#contact">Contact</a>
+  </div>
 
-</div>
-
-<!-- HERO -->
-
-<section class="hero">
-
+  <section class="hero">
+    <div class="hero-accent"></div>
     <div class="hero-content">
-
-        <span class="badge">
-
-            Open To Internship
-
-        </span>
-
-        <h1>
-
-            Haidar Nanda<br>
-            Supriyadi Aziz
-
-        </h1>
-
-        <h2>
-            <div class="typing-wrapper">
-                <h2>
-                    <span id="typing"></span><span class="cursor">|</span>
-                </h2>
-            </div>
-        </h2>
-
-        <p>
-
-            Mahasiswa Teknik Informatika Fakultas Teknologi Informasi
-            yang memiliki ketertarikan pada Data Science,
-            Web Development,
-            Data Analytics,
-            dan teknologi digital modern.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn-primary">
-
-                View Projects
-
-            </a>
-
-            <a href="assets/Haidar.pdf"
-                class="btn-secondary">
-
-                Download CV
-
-            </a>
-
-        </div>
-
+      <span class="badge">Open To Internship</span>
+      <h1 class="hero-headline">
+        <span class="hero-line">Haidar Nanda</span>
+        <span class="hero-line">Supriyadi Aziz</span>
+      </h1>
+      <div class="hero-divider"></div>
+      <div class="typing-wrapper">
+        <span id="typing"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">Mahasiswa Teknik Informatika Fakultas Teknologi Informasi yang memiliki ketertarikan pada Data Science, Web Development, Data Analytics, dan teknologi digital modern.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="assets/Haidar.pdf" class="btn-secondary">Download CV</a>
+      </div>
+      <div class="hero-meta">Portfolio &bull; 2026</div>
     </div>
-
     <div class="hero-image">
-
-        <img src="assets/Haidar.jpeg"
-            alt="Haidar">
-
+      <div class="hero-image-frame">
+        <img src="assets/Haidar.jpeg" alt="Haidar Nanda">
+        <div class="hero-image-accent"></div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- STATS -->
-
-<section class="stats">
-
+  <section class="stats">
     <div class="stat-card">
-
-        <h3>10+</h3>
-
-        <p>Projects</p>
-
+      <h3>10+</h3>
+      <p>Projects</p>
     </div>
-
     <div class="stat-card">
-
-        <h3>5+</h3>
-
-        <p>Technologies</p>
-
+      <h3>5+</h3>
+      <p>Technologies</p>
     </div>
-
     <div class="stat-card">
-
-        <h3>3+</h3>
-
-        <p>Years Learning</p>
-
+      <h3>3+</h3>
+      <p>Years Learning</p>
     </div>
-
     <div class="stat-card">
-
-        <h3>∞</h3>
-
-        <p>Curiosity</p>
-
+      <h3>∞</h3>
+      <p>Curiosity</p>
     </div>
+  </section>
 
-</section>
-
-<!-- ABOUT -->
-
-<section id="about"
-    class="section">
-
-    <div class="section-title">
-
-        About Me
-
+  <section id="about" class="section">
+    <div class="overline">About</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="card-elevated">
+      <p>Saya merupakan mahasiswa Teknik Informatika Universitas Kristen Satya Wacana yang berfokus pada Data Science, Web Development, dan pengembangan teknologi digital. Saya memiliki kemampuan dalam HTML, CSS, JavaScript, Java, Python, serta pengalaman pada bidang elektronika dan otomotif melalui kegiatan PKL.</p>
     </div>
+  </section>
 
-    <div class="glass-card">
-
-        <p>
-
-            Saya merupakan mahasiswa Teknik Informatika
-            Universitas Kristen Satya Wacana
-            yang berfokus pada Data Science,
-            Web Development,
-            dan pengembangan teknologi digital.
-
-            Saya memiliki kemampuan dalam HTML,
-            CSS,
-            JavaScript,
-            Java,
-            Python,
-            serta pengalaman pada bidang elektronika
-            dan otomotif melalui kegiatan PKL.
-
-        </p>
-
-    </div>
-
-</section>
-
-<!-- EDUCATION -->
-
-<section id="education"
-    class="section">
-
-    <div class="section-title">
-
-        Education
-
-    </div>
-
+  <section id="education" class="section">
+    <div class="overline">Education</div>
+    <h2 class="section-title">Education</h2>
     <div class="timeline">
-
-        <div class="timeline-item">
-
-            <h3>
-
-                Universitas Kristen Satya Wacana
-
-            </h3>
-
-            <p>
-
-                Teknik Informatika • 2023 - Sekarang
-
-            </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <h3>
-
-                MAN 2 Boyolali
-
-            </h3>
-
-            <p>
-
-                2020 - 2023
-
-            </p>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <h3>
-
-                SMP IT Al-Falaah
-
-            </h3>
-
-            <p>
-
-                2016 - 2019
-
-            </p>
-
-        </div>
-
+      <div class="timeline-item">
+        <h3>Universitas Kristen Satya Wacana</h3>
+        <p>Teknik Informatika &bull; 2023 &ndash; Sekarang</p>
+      </div>
+      <div class="timeline-item">
+        <h3>MAN 2 Boyolali</h3>
+        <p>2020 &ndash; 2023</p>
+      </div>
+      <div class="timeline-item">
+        <h3>SMP IT Al-Falaah</h3>
+        <p>2016 &ndash; 2019</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills"
-    class="section">
-
-    <div class="section-title">
-
-        Skills
-
-    </div>
-
+  <section id="skills" class="section">
+    <div class="overline">Skills</div>
+    <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
-
+      <div class="skill-group">
+        <span class="skill-group-label">Languages</span>
         <div class="skill-card">HTML</div>
-
         <div class="skill-card">CSS</div>
-
         <div class="skill-card">JavaScript</div>
-
         <div class="skill-card">Java</div>
-
         <div class="skill-card">Python</div>
-
-        <div class="skill-card">Data Science</div>
-
-        <div class="skill-card">Data Analysis</div>
-
-        <div class="skill-card">Electronics</div>
-
-        <div class="skill-card">Otomotif</div>
-
         <div class="skill-card">Sql</div>
-
         <div class="skill-card">php</div>
-
+      </div>
+      <div class="skill-group">
+        <span class="skill-group-label">Data</span>
+        <div class="skill-card">Data Science</div>
+        <div class="skill-card">Data Analysis</div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-group-label">Others</span>
+        <div class="skill-card">Electronics</div>
+        <div class="skill-card">Otomotif</div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- EXPERIENCE -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        Experience
-
-    </div>
-
-    <div class="glass-card">
-
+  <section class="section">
+    <div class="overline">Experience</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="card-elevated">
+      <div class="exp-item">
         <h3>PKL Bengkel Otomotif</h3>
-
-        <p>
-
-            Melakukan perawatan kendaraan,
-            diagnosis kerusakan,
-            dan perbaikan dasar kendaraan.
-
-        </p>
-
-        <br>
-
+        <p>Melakukan perawatan kendaraan, diagnosis kerusakan, dan perbaikan dasar kendaraan.</p>
+      </div>
+      <div class="exp-item">
         <h3>Patroli Keamanan Sekolah (PKS)</h3>
-
-        <p>
-
-            Pengembangan disiplin,
-            kepemimpinan,
-            dan kerja sama tim.
-
-        </p>
-
-        <br>
-
+        <p>Pengembangan disiplin, kepemimpinan, dan kerja sama tim.</p>
+      </div>
+      <div class="exp-item">
         <h3>Panitia LDKM</h3>
-
-        <p>
-
-            Berpartisipasi dalam koordinasi kegiatan,
-            manajemen acara,
-            dan kolaborasi tim.
-
-        </p>
-
+        <p>Berpartisipasi dalam koordinasi kegiatan, manajemen acara, dan kolaborasi tim.</p>
+      </div>
     </div>
+  </section>
 
-</section>
+  <section id="projects" class="section">
+    <div class="overline">Projects</div>
+    <h2 class="section-title">Latest GitHub Projects</h2>
+    <div id="githubProjects" class="projects-grid"></div>
+  </section>
 
-<!-- PROJECTS -->
-
-<section id="projects"
-    class="section">
-
-    <div class="section-title">
-
-        Latest GitHub Projects
-
-    </div>
-
-    <div id="githubProjects"
-        class="projects-grid">
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact"
-    class="section">
-
-    <div class="section-title">
-
-        Let's Connect
-
-    </div>
-
+  <section id="contact" class="section">
+    <div class="overline">Contact</div>
+    <h2 class="section-title">Let's Connect</h2>
     <div class="contact-container">
-
-        <div class="contact-grid">
-
-            <a href="https://github.com/ndadevdev"
-                target="_blank">
-
-                <i class="fab fa-github"></i>
-
-                GitHub
-
-            </a>
-
-            <a href="#">
-
-                <i class="fab fa-linkedin"></i>
-
-                LinkedIn
-
-            </a>
-
-            <a href="nnandaa21.12@email.com">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                Email
-
-            </a>
-
-        </div>
-
-        <form class="contact-form" id="contactForm">
-
-    <input
-        type="text"
-        name="from_name"
-        placeholder="Your Name"
-        required>
-
-    <input
-        type="email"
-        name="from_email"
-        placeholder="Your Email"
-        required>
-
-    <textarea
-        name="message"
-        placeholder="Message"
-        required></textarea>
-
-    <button type="submit">
-        Send Message
-    </button>
-
-</form>
-
+      <div class="contact-links">
+        <a href="https://github.com/ndadevdev" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="#" class="contact-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="nnandaa21.12@email.com" class="contact-link">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="from_email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
+  </section>
 
-</section>
+  <footer>
+    <p>&copy; 2026 Haidar Nanda Supriyadi Aziz</p>
+  </footer>
 
-<!-- FOOTER -->
-
-<footer>
-
-    © 2026 Haidar Nanda Supriyadi Aziz
-
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init({
-      publicKey: "IRRkXUn7gTZiY00u0"
-    });
-  })();
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
-
-<script src="script.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init({ publicKey: "IRRkXUn7gTZiY00u0" });
+    })();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
