@@ -20,6 +20,8 @@ VoiceBox editorial system (`voicebox-DESIGN.md`). Zero `border-radius`, zero `bo
 
 `git push origin main` → GitHub Pages. Custom domain: `porto.ndadev.my.id` (set in `CNAME`). No CI config.
 
+Contains `.nojekyll` (empty file) so GitHub Pages skips Jekyll processing.
+
 ## Key code facts
 
 - **Projects section** (`index.html:167`): GitHub repos (dynamic).
