@@ -239,6 +239,21 @@ header {
   position: relative;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("assets/hero-bg.jpg") center / cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .hero-content {
   flex: 1;
   max-width: 640px;
@@ -433,7 +448,7 @@ header {
   gap: 0;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px 56px;
+  padding: 48px 24px 64px;
   border-bottom: 2px solid var(--border-subtle);
 }
 
@@ -837,6 +852,53 @@ footer p {
 }
 
 /* =====================================
+   RESPONSIVE — DESKTOP HERO
+   ===================================== */
+@media (min-width: 901px) {
+  .hero-image {
+    max-width: 480px;
+  }
+  .hero-image-frame img {
+    max-width: 440px;
+  }
+  .badge {
+    color: #FAFAFA;
+    border-color: #EF4444;
+    background: rgba(239,68,68,0.15);
+  }
+  .hero-line {
+    color: #FAFAFA;
+  }
+  .typing-wrapper {
+    color: rgba(255,255,255,0.75);
+  }
+  .hero-desc {
+    color: rgba(255,255,255,0.75);
+  }
+  .btn-primary {
+    background: #EF4444;
+    border-color: #EF4444;
+    color: #FAFAFA;
+  }
+  .btn-primary:hover {
+    background: #DC2626;
+    border-color: #DC2626;
+  }
+  .btn-secondary {
+    border-color: #FAFAFA;
+    color: #FAFAFA;
+  }
+  .btn-secondary:hover {
+    background: #FAFAFA;
+    color: #0A0A0A;
+  }
+  .hero-meta {
+    color: rgba(255,255,255,0.4);
+    border-top-color: rgba(255,255,255,0.1);
+  }
+}
+
+/* =====================================
    RESPONSIVE — TABLET (≤900px)
    ===================================== */
 @media (max-width: 900px) {
@@ -846,6 +908,9 @@ footer p {
     gap: 32px;
     padding: 110px 24px 56px;
     min-height: auto;
+  }
+  .hero::before {
+    display: none;
   }
 
   .hero-content {
@@ -955,6 +1020,7 @@ footer p {
     min-height: 80vh;
     position: relative;
     overflow: hidden;
+    background: none;
   }
 
   .hero-image {
